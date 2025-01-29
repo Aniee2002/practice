@@ -1,0 +1,79 @@
+import React from "react";
+
+const Header = () => (
+  <header className="bg-gray-800 text-white p-4 flex justify-between items-center">
+    <h1 className="text-xl font-bold">USM's Shriram Mantri Vidyanidhi Info Tech Academy</h1>
+    <nav>
+      <ul className="flex space-x-4">
+        <li>Home</li>
+        <li>Courses</li>
+        <li>Placement</li>
+        <li>Beyond Classes</li>
+        <li>About Us</li>
+        <li>Get in Touch</li>
+      </ul>
+    </nav>
+  </header>
+);
+
+const HeroSection = () => (
+  <section className="p-6 text-center">
+    <img src="/hero-image.png" alt="Hero" className="mx-auto" />
+  </section>
+);
+
+const WhatWeOffer = () => (
+  <section className="p-6 bg-gray-100 text-center">
+    <h2 className="text-2xl font-bold">What we offer</h2>
+    <div className="grid grid-cols-3 gap-4 mt-4">
+      <div className="bg-white p-4 shadow">
+        <h3>Workshops</h3>
+        <p>Comprehensive training and hands-on experience.</p>
+      </div>
+      <div className="bg-white p-4 shadow">
+        <h3>MS-CIT</h3>
+        <p>Maharashtra State Certificate in Information Technology.</p>
+      </div>
+      <div className="bg-white p-4 shadow">
+        <h3>Diploma in Advanced Computing</h3>
+        <p>Expert-level computing knowledge for students.</p>
+      </div>
+    </div>
+  </section>
+);
+
+const StudentLife = () => (
+  <section className="p-6 text-center">
+    <h2 className="text-2xl font-bold">Glimpses of Student Life</h2>
+    <p>Explore seminars, exhibitions, and student experiences.</p>
+  </section>
+);
+
+const Recruiters = () => (
+  <section className="p-6 bg-gray-100 text-center">
+    <h2 className="text-2xl font-bold">Major Recruiters</h2>
+    <div className="flex justify-center space-x-4 mt-4">
+      <img src="/atos-logo.png" alt="Atos" className="h-12" />
+      <img src="/capgemini-logo.png" alt="Capgemini" className="h-12" />
+    </div>
+  </section>
+);
+
+const Footer = () => (
+  <footer className="bg-gray-800 text-white p-6 text-center">
+    <p>&copy; 2025 VIT. All rights reserved.</p>
+  </footer>
+);
+
+const App = () => (
+  <div>
+    <Header />
+    <HeroSection />
+    <WhatWeOffer />
+    <StudentLife />
+    <Recruiters />
+    <Footer />
+  </div>
+);
+
+export default App;
